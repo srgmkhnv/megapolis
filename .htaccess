@@ -1,0 +1,8 @@
+Options -Indexes
+RewriteEngine On
+
+# /wa → /wa/index.html (без trailing-slash redirect)
+RewriteRule ^wa$ /wa/index.html [L]
+
+# UTF-8 по умолчанию
+AddDefaultCharset UTF-8
